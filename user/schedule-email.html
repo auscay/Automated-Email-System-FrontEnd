@@ -1,0 +1,96 @@
+<html lang="en"></html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schedula</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/jquery/main.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+              <img class="d-block mx-auto mb-4" src="/assets/img/schedula-high-resolution-logo-transparent.png" alt="" width="72" height="57">
+              <h2>Schedule a mail</h2>
+              <p class="lead">Enter the details below to schedule your email. Simply provide the recipient's email address, the subject of your message, the exact date and time you'd like the email to be sent, and the content of the email itself. Once scheduled, the system will automatically send the email at the specified time. Perfect for reminders, important deadlines, or staying on top of your communication needs!.</p>
+            </div>
+        
+            <div class="row g-5">
+              <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="text-primary">Your schedules</span>
+                  <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product name</h6>
+                      <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Second product</h6>
+                      <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$8</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Third item</h6>
+                      <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$5</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Enter details</h4>
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="email" class="form-label">Recipient's email</label>
+                      <input type="text" class="form-control" id="email" placeholder="Enter recipient email" value="" required>
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+                    
+        
+                    <div class="col-sm-6">
+                      <label for="heading" class="form-label">Heading</label>
+                      <input type="text" class="form-control" id="heading" placeholder="Enter heading" value="" required>
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject<span class="text-body-secondary"></span></label>
+                      <textarea type="text" class="form-control" id="subject" placeholder="Enter subject"></textarea>
+                      <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                      </div>
+                    </div>  
+
+                    <div class="mb-3">
+                      <label for="scheduled_time" class="form-label">Scheduled Time</label>
+                      <input type="datetime-local" class="form-control" id="scheduled_time" name="scheduled_time" required>
+                  </div>                  
+                  <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </main>
+    </div>
+
+    <footer class="mt-auto text-center text-black-50">
+        <p>Check out our <a href="https://github.com/auscay/Automated-Email-System-FrontEnd" class="text-black">Github</a>, by <a href="https://github.com/auscay/" class="text-black">Auscay</a>.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
